@@ -31,14 +31,14 @@ x_train, x_test, y_train, y_test = train_test_split(
 )
 
 
-st.title("Gold Price Predication - Machine Learning")
+st.title("Gold Price Prediction - Machine Learning")
 st.subheader("Preview")
 st.write(df.head(10))
 
 
-st.sidebar.subheader("Algorithms")
+st.sidebar.subheader("Algorithm")
 algo = st.sidebar.selectbox(
-    "select algorithms", ["Linear Regression", "Decision Tree", "Random Forest"]
+    "select algorithm", ["Linear Regression", "Decision Tree", "Random Forest"]
 )
 
 if algo == "Linear Regression":
